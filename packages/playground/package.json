@@ -1,0 +1,15 @@
+{
+  "name": "@visoning/vue-interactions-playground",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {
+    "play": "vue-demi-switch 3 vue & vite",
+    "play:v2": "vue-demi-switch 2.7 vue2 & vite"
+  },
+  "author": "nooooooom <https://github.com/nooooooom>",
+  "dependencies": {
+    "@visoning/vue-interactions-components": "workspace:^0.0.1",
+    "@visoning/vue-utility": "^0.0.34",
+    "vue-demi": "*"
+  }
+}

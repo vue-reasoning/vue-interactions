@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "importsNotUsedAsValues": "error",
+    "jsx": "preserve",
+    "types": ["vite/client", "vitest/globals"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@visoning/vue-interactions": ["packages/core/src/index.ts"],
+      "@visoning/vue-interactions-components": ["packages/components/src/index.ts"]
+    }
+  },
+  "include": [
+    "packages/global.d.ts",
+    "packages/*/src",
+    "packages/*/*.ts",
+    "packages/*/__tests__",
+    "rollup.config.ts"
+  ],
+  "exclude": ["node_modules"]
+}

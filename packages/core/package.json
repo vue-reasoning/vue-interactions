@@ -1,0 +1,44 @@
+{
+  "name": "@visoning/vue-interactions",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "vue-demi-switch 3 vue & tsup",
+    "test": "vitest",
+    "prepublish": "nr build"
+  },
+  "keywords": [
+    "trigger",
+    "interactor",
+    "actions",
+    "interactions",
+    "vue",
+    "hooks",
+    "vue-hooks"
+  ],
+  "author": "nooooooom <https://github.com/nooooooom>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-interactions/core",
+    "directory": "packages/core"
+  },
+  "dependencies": {
+    "@visoning/vue-utility": "^0.0.35",
+    "vue-demi": "*"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.4.4",
+    "vue": ">=2.7.0 || ^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}

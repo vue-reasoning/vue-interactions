@@ -7,6 +7,13 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "vue-demi-switch 3 vue & tsup",
     "test": "vitest",
@@ -18,8 +25,7 @@
     "actions",
     "interactions",
     "vue",
-    "hooks",
-    "vue-hooks"
+    "vue-component"
   ],
   "author": "nooooooom <https://github.com/nooooooom>",
   "license": "MIT",
